@@ -1,0 +1,114 @@
+/* Основные стили для header */
+.header {
+  height: 70px;
+  position: fixed;
+  z-index: 9999;
+  gap: 50px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-left: 880px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.phone h5 {
+  padding-top: 6px;
+}
+
+.logo {
+  height: 70px;
+  width: 100px;
+  margin-left: 60px;
+  object-fit: cover;
+}
+
+.textNav {
+  color: rgb(174, 174, 174);
+  transition: 0.4s;
+}
+
+.textNav:hover {
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  color: rgb(174, 174, 174);
+  font-weight: 1000;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+}
+
+/* Сендвич меню */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .logo {
+    margin: 0;
+  }
+
+  /* Меню скрыто по умолчанию */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px; /* Чтобы меню не перекрывало шапку */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Когда меню открыто */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  /* Телефонный блок в мобильной версии */
+  .phone {
+    display: none; /* Скрыть телефон в мобильной версии */
+  }
+}

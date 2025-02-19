@@ -1,0 +1,203 @@
+.banner {
+  width: 100%;
+  height: 800px;
+  background-image: url("https://s0.rbk.ru/v6_top_pics/media/img/4/36/756113020010364.jpg");
+  background-size: cover; /* Растягиваем изображение на весь контейнер */
+  background-position: center; /* Центрируем изображение */
+  margin-top: 70px;
+  display: flex; /* Для выравнивания элементов внутри */
+  align-items: center;
+  justify-content: left; /* Выравнивание контента по центру */
+
+  position: relative; /* Для правильной работы псевдоэлемента */
+}
+
+.banner::before {
+  content: ""; /* Обязательно нужно задать content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Черное затемнение с 50% прозрачностью */
+  z-index: 1; /* Чтобы затемнение было поверх фона, но под контентом */
+}
+
+.banner > * {
+  position: relative; /* Для того, чтобы содержимое было поверх псевдоэлемента */
+  z-index: 2; /* Элементы внутри баннера будут отображаться поверх затемнения */
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+}
+
+.slider-container:hover {
+  cursor: grab;
+}
+
+.slider-item {
+  width: 100%;
+}
+
+.text {
+  color: rgb(232, 232, 232);
+  width: 700px;
+  font-weight: bold;
+}
+
+.bannerText {
+  margin: 600px 100px 100px 100px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+}
+
+.buttonBanner {
+  background-color: rgb(248, 248, 248);
+  width: 250px;
+  height: 50px;
+  border: 5px solid black;
+  color: rgb(0, 0, 0); /* начальный цвет текста */
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1; /* Убедитесь, что текст будет выше псевдо-элемента */
+}
+
+.buttonBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: left 0.1s ease;
+  z-index: -1; /* Псевдо-элемент будет ниже текста */
+}
+
+.buttonBanner:hover::after {
+  left: 0;
+}
+
+.buttonBanner:hover {
+  color: rgb(255, 255, 255); /* цвет текста при наведении */
+}
+
+.card {
+  border: none;
+}
+
+.custom-card {
+  height: 250px; /* Увеличиваем высоту карточки */
+  width: 85%; /* Делаем карточки чуть уже */
+  margin: 0 auto; /* Центрируем карточки */
+  padding: 20px; /* Добавляем внутренний отступ */
+  border-radius: 10px; /* Закругляем углы */
+}
+
+.icon-img {
+  width: 50px; /* Уменьшаем размер иконок */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.containerBenefits .col {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.catalogText {
+  margin-left: 80px;
+}
+
+.slick-dots {
+  bottom: 15px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .buttonBanner {
+    font-size: 16px;
+    padding: 8px 16px;
+    width: 200px;
+  }
+  .custom-card {
+    height: 260px;
+    width: 90%;
+  }
+  .icon-img {
+    width: 40px;
+  }
+}
+
+/* Адаптивность для экранов до 480px (мобильные устройства) */
+@media (max-width: 480px) {
+  .banner {
+    height: 50vh; /* Изменяем высоту блока на мобильных устройствах */
+    background-size: cover; /* Изображение подстраивается под ширину */
+    background-position: center center;
+  }
+  .text {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .bannerText {
+    margin: 300px 20px;
+  }
+  .buttonBanner {
+    font-size: 15px;
+    padding: 6px 12px;
+    width: 180px;
+  }
+  .custom-card {
+    height: 200px;
+    width: 95%;
+  }
+  .icon-img {
+    width: 35px;
+  }
+}

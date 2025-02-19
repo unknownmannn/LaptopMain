@@ -1,0 +1,22 @@
+.footer-line {
+  border: none;
+  border-top: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: gray;
+}
