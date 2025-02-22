@@ -1,4 +1,4 @@
-# React + Vite
+![Снимок экрана 2025-02-22 132559](https://github.com/user-attachments/assets/88175592-e487-447a-8223-689e5c3e007d)# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -104,4 +104,6 @@ npm start
 - Главная страница доступна по адресу: **http://localhost:5050**
 - Панель администратора: **http://localhost:3000/admin**
 - API работает на: **http://localhost:5000**
+- ![image](https://github.com/user-attachments/assets/f706eef2-37f9-4417-8b60-734ca673911c)
+
 
