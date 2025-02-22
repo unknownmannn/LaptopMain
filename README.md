@@ -105,5 +105,8 @@ npm start
 - Панель администратора: **http://localhost:3000/admin**
 - API работает на: **http://localhost:5000**
 - ![image](https://github.com/user-attachments/assets/f706eef2-37f9-4417-8b60-734ca673911c)
+- ![Снимок экрана 2025-02-22 132710](https://github.com/user-attachments/assets/1f76d5e6-33c1-4ecb-8cac-6cf56c446cc6)
+![Снимок экрана 2025-02-22 132722](https://github.com/user-attachments/assets/d44e21f3-05bc-43ec-80ef-ebad988aa801)
+
 
 
