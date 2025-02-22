@@ -44,10 +44,6 @@ const Product = ({ product }) => {
             {product.brand.toUpperCase()} {product.model.toUpperCase()}{" "}
             {product.year}
           </p>
-          <p className="product-description">
-            Пробег {product.mileage} · {product.fuelType} ·{" "}
-            {product.condition == "new" ? "НОВЫЙ" : "Б/У"}
-          </p>
         </div>
       </div>
     </>

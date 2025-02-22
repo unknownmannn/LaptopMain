@@ -61,56 +61,55 @@ const About = () => {
   return (
     <AboutContainer id="about">
       <Image
-        src="https://media.istockphoto.com/id/1044744690/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D1%81-%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B9-%D0%BF%D0%BE%D0%B7%D0%B8%D1%80%D1%83%D0%B5%D1%82-%D0%B2-%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BA%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B5.jpg?s=1024x1024&w=is&k=20&c=cNOhfqfF03re5dRWndY5hD5vH9nf_AuWkHtESUCXv5A="
+        src="/5316625005540404375.jpg"
         alt="Aleh Miliakou"
       />
 
       <Content>
-        <Title>О компании Melauto</Title>
+        <Title>О компании Labtop</Title>
         <Text>
-          Здравствуйте, меня зовут <Highlight>Aleh Miliakou</Highlight>, и
-          позвольте рассказать немного о себе.
+          Здравствуйте, Нас зовут <Highlight>Асылжан и Нурахмад</Highlight>, и
+          позвольте рассказать немного про нас.
         </Text>
 
         <Text>
-          Более <Highlight>20 лет</Highlight> я посвятил боевым единоборствам:
-          от бокса и Кудо до ММА. В последние <Highlight>10 лет</Highlight> я
-          работаю судьей и рефери на крупнейших международных турнирах:{" "}
-          <Highlight>UFC, M1 Global, ACA, Brave FC</Highlight> и других.
+          Мы<Highlight>продаем и покупаем</Highlight> разных видов ноутбука <Highlight>от 2015</Highlight> до нового
+          которые в очень хорошем или же в среднем состояний{" "}
+          <Highlight>Macbook, Acer,Vivobook, Acer</Highlight> и других.
         </Text>
 
         <Text>
-          Эти годы научили меня{" "}
-          <Highlight>дисциплине, честности и ответственности</Highlight> —
-          качествам, которые я переношу в свою работу и бизнес.
-        </Text>
+  Эти годы научили меня{" "}
+  <Highlight>технологиям, вниманию к деталям и качественному сервису</Highlight> —  
+  качествам, которые я переношу в свою работу и бизнес.
+</Text>
 
-        <Title>Почему мне можно доверять?</Title>
-        <List>
-          <ListItem>
-            <Highlight>Опыт и профессионализм</Highlight> — Работа на
-            международной арене научила меня точности и ответственности.
-          </ListItem>
-          <ListItem>
-            <Highlight>Прозрачность</Highlight> — Я делаю процесс покупки
-            автомобиля честным и понятным.
-          </ListItem>
-          <ListItem>
-            <Highlight>Публичный статус</Highlight> — Работа с топовыми
-            спортсменами подтверждает мою надежность.
-          </ListItem>
-        </List>
+<Title>Почему мне можно доверять?</Title>
+<List>
+  <ListItem>
+    <Highlight>Широкий ассортимент</Highlight> — У нас есть ноутбуки для работы, учебы и игр  
+    от ведущих мировых брендов.
+  </ListItem>
+  <ListItem>
+    <Highlight>Честность</Highlight> — Мы предлагаем только проверенную технику с  
+    официальной гарантией.
+  </ListItem>
+  <ListItem>
+    <Highlight>Клиентоориентированность</Highlight> — Помогаем подобрать ноутбук,  
+    который подойдет именно вам.
+  </ListItem>
+</List>
 
-        <Text>
-          В компании <Highlight>Melauto</Highlight> мы занимаемся{" "}
-          <Highlight>экспортом автомобилей из Европы в СНГ</Highlight>, делая
-          этот процесс удобным и безопасным.
-        </Text>
+<Text>
+  В компании <Highlight>Labshop</Highlight> мы предлагаем{" "}
+  <Highlight>качественные ноутбуки с доставкой по всей стране</Highlight>,  
+  делая процесс покупки удобным и надежным.
+</Text>
 
-        <Text>
-          Если вы ищете надежного партнера для покупки авто —{" "}
-          <Highlight>вы по адресу!</Highlight>
-        </Text>
+<Text>
+  Если вы ищете надежного продавца ноутбуков —{" "}
+  <Highlight>вы по адресу!</Highlight>
+</Text>
       </Content>
     </AboutContainer>
   );

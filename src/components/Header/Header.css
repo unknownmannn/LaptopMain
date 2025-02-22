@@ -1,5 +1,6 @@
 /* Основные стили для header */
 .header {
+  background-color: #f8f8f8 !important;
   height: 70px;
   position: fixed;
   z-index: 9999;
@@ -28,12 +29,12 @@
 }
 
 .textNav {
-  color: rgb(174, 174, 174);
+  color: rgb(39, 24, 24);
   transition: 0.4s;
 }
 
 .textNav:hover {
-  color: #ffffff;
+  color: #570202;
 }
 
 * {
@@ -44,19 +45,27 @@
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 100px;
 }
 
+
 .nav-item {
-  color: rgb(174, 174, 174);
-  font-weight: 1000;
+  flex: 1; /* Растягивает каждый пункт меню */
+  text-align: center; /* Выравнивание текста по центру */
+  font-size: 22px; /* Увеличиваем размер текста */
+  font-weight: bold;
+  display: inline-block; /* Чтобы элементы не переносились */
+  white-space: nowrap; /* Запрещает перенос текста */
+  padding: 15px 0; /* Добавляем отступы сверху и снизу */
+  color: rgb(94, 64, 64);
   transition: 0.4s;
   text-decoration: none;
 }
 
 .nav-item:hover {
-  color: #ffffff;
+  color: #e50000;
 }
+
 
 /* Сендвич меню */
 .menu-icon {

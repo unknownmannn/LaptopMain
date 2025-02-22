@@ -47,8 +47,7 @@ export default function HomePage() {
       <div className="slider-container">
         <div className="bannerText">
           <h2 className="text">
-            Автомобили из Европы под ключ. Качество и надежность на каждом
-            этапе.
+            Виды Ноутбуков и компьютеров на ваш выбор
           </h2>
           <button onClick={scrollToSection} className="buttonBanner">
             Оставить заявку

@@ -93,7 +93,7 @@ const Application = () => {
         </Row>
 
         <Form.Group controlId="carDetails" className="mb-3">
-          <Form.Label>Укажите желанный автомобиль</Form.Label>
+          <Form.Label>Укажите желанный Ноутбук</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}

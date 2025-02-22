@@ -6,11 +6,11 @@ import "./Catalog.css"; // Подключаем стили
 import { useNavigate } from "react-router-dom";
 
 const cars = [
-  { name: "G70 SHOOTING BRAKE", image: "/slidercatalog/car1.jpg" },
-  { name: "GV80", image: "/slidercatalog/car1.jpg" },
-  { name: "GV70", image: "/slidercatalog/car1.jpg" },
-  { name: "BMW X5", image: "/slidercatalog/car1.jpg" },
-  { name: "Audi A6", image: "/slidercatalog/car1.jpg" }
+  { name: "Macbook Air", image: "/slidercatalog/car1.jpg" },
+  { name: "Acer Gadget", image: "/slidercatalog/car1.jpg" },
+  { name: "Macbook Pro", image: "/slidercatalog/car1.jpg" },
+  { name: "Lenova Ideapad", image: "/slidercatalog/car1.jpg" },
+  { name: "Asus TUF Gaming", image: "/slidercatalog/car1.jpg" }
 ];
 
 const Catalog = () => {
